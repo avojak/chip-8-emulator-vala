@@ -4,7 +4,7 @@
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/avojak/chip-8-emulator-vala?sort=semver)
 
 <p align="center">
-  <img src="data/assets/chip-8.svg" alt="Icon" />
+  <img src="data/assets/chip-8.png" alt="Icon" />
 </p>
 <h1 align="center">CHIP-8</h1>
 <!-- <p align="center">
