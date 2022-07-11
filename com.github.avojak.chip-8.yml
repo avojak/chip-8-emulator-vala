@@ -1,0 +1,32 @@
+app-id: com.github.avojak.chip-8
+
+runtime: io.elementary.Platform
+runtime-version: '7'
+sdk: io.elementary.Sdk
+
+command: com.github.avojak.chip-8
+
+finish-args:
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+  - '--socket=pulseaudio'
+  - '--filesystem=host'
+
+modules:
+  - name: canberra
+    config-opts:
+      - '--enable-gstreamer'
+      - '--enable-pulse'
+      - '--disable-oss'
+      - '--disable-static'
+      - '--with-builtin=dso'
+    sources:
+      - type: git
+        url: http://git.0pointer.net/clone/libcanberra.git
+        disable-shallow-clone: true
+  - name: chip-8
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .

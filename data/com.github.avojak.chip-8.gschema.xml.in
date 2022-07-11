@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="@schema-path@" id="@appid@">
+    <key name="prefer-dark-style" type="b">
+      <default>false</default>
+      <summary>If the dark Gtk stylesheet should be used</summary>
+      <description>If the dark Gtk stylesheet should be used</description>
+    </key>
+    <key name="pos-x" type="i">
+        <default>360</default>
+        <summary>The saved horizontal position of the window.</summary>
+        <description>The saved horizontal position of the window.</description>
+    </key>
+    <key name="pos-y" type="i">
+        <default>360</default>
+        <summary>The saved vertical position width of the window.</summary>
+        <description>The saved vertical position of the window.</description>
+    </key>
+    <key name="window-width" type="i">
+        <default>640</default>
+        <summary>The saved width of the window.</summary>
+        <description>The saved width of the window.</description>
+    </key>
+    <key name="window-height" type="i">
+        <default>352</default>
+        <summary>The saved height of the window.</summary>
+        <description>The saved height of the window.</description>
+    </key>
+    <key name="instruction-frequency" type="d">
+        <default>600.0</default>
+        <summary>The instruction frequency of the emulator in instructions per second.</summary>
+        <description>The instruction frequency of the emulator in instructions per second.</description>
+    </key>
+    <key name="foreground-color" type="s">
+        <default>"#ffffff"</default>
+        <summary>The foreground color.</summary>
+        <description>The foreground color.</description>
+    </key>
+    <key name="background-color" type="s">
+        <default>"#000000"</default>
+        <summary>The background color.</summary>
+        <description>The background color.</description>
+    </key>
+  </schema>
+</schemalist>
